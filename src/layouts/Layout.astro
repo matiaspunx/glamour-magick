@@ -18,12 +18,24 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Amti" />
 		
 		<!-- Open Graph / Social -->
 		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content="/og-image.jpg" /> <!-- Placeholder for actual OG image -->
+		<meta property="og:image" content="/hero2.webp" />
+		<meta property="og:site_name" content="Glamour Magick" />
+		<meta property="og:locale" content="es_AR" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="/hero2.webp" />
 
 		<!-- GSAP (Optional but premium) -->
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
