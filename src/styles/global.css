@@ -61,7 +61,11 @@
 }
 
 @layer base {
-  :root {
+  html {
+  scroll-behavior: smooth;
+}
+
+:root {
     color-scheme: dark;
   }
 
@@ -115,5 +119,21 @@
 
   .neon-border-cyan {
     @apply border-brand-cyan/50 shadow-[0_0_15px_rgba(34,211,238,0.3)];
+  }
+
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
+  }
+
+  .floating {
+    animation: float var(--float-duration, 4s) ease-in-out infinite;
+    animation-delay: var(--float-delay, 0s);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
   }
 }
