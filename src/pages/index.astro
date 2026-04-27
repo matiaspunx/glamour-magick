@@ -300,12 +300,15 @@ const heroImage = "/hero2.webp"
 </Layout>
 
 <script>
-  import { gsap } from "gsap"
-  import { ScrollTrigger } from "gsap/ScrollTrigger"
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  gsap.registerPlugin(ScrollTrigger)
+  // Registrar el plugin explícitamente
+  gsap.registerPlugin(ScrollTrigger);
 
-  // Entrance Animations
+  // Esperar a que el DOM esté listo para evitar elementos nulos o errores de sincronización
+  document.addEventListener("DOMContentLoaded", () => {
+    // Entrance Animations
   gsap.from("#hero-content > *", {
     y: 50,
     opacity: 0,
@@ -349,6 +352,7 @@ const heroImage = "/hero2.webp"
       from: "random"
     }
   })
+});
 </script>
 
 <style>
