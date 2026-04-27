@@ -1,46 +1,53 @@
-# Astro Starter Kit: Basics
+# 🔮 GLAMOUR MAGICK: El Arte de la Fascinación
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Landing page de alto impacto para el taller online **GLAMOUR MAGICK: El Arte de la Fascinación y Presencia**. Un espacio donde la estética tecnológica se encuentra con la praxis esotérica moderna.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🛠️ Stack Tecnológico
 
-## 🚀 Project Structure
+- **Framework:** [Astro 6.1.8](https://astro.build/) (Optimizado para performance)
+- **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/) (Plugin de Vite para máxima velocidad)
+- **Animaciones:** [GSAP 3](https://gsap.com/) + ScrollTrigger (Interacciones fluidas y orgánicas)
+- **Iconos:** [Lucide React](https://lucide.dev/)
+- **Tipografías:** Google Fonts (Instrument Serif, Sora, Fira Code)
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🎨 Concepto Visual: "Tech-Occult"
+
+El proyecto sigue una estética **Cyberpunk Oscura / Vapor Clinic**, caracterizada por:
+- Fondo negro puro (`#000000`) con texturas de ruido digital.
+- Acentos en Púrpura Plasma (`#7B61FF`) y Cyan Neón (`#00F0FF`).
+- Tipografía dramática con contrastes de escala.
+- Micro-interacciones magnéticas y efectos de "vidrio" (glassmorphism).
+
+## 📂 Estructura del Proyecto
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── public/              # Assets estáticos (Hero images, favicon)
+├── src/
+│   ├── layouts/         # Layout.astro (Base con SEO y Scripts)
+│   ├── components/      # Componentes React/Astro reutilizables
+│   ├── pages/
+│   │   ├── index.astro  # Landing Page principal
+│   │   ├── terms.astro  # Términos de Servicio
+│   │   └── privacy.astro# Política de Privacidad
+│   └── styles/
+│       └── global.css   # Sistema de diseño y variables Tailwind v4
+└── astro.config.mjs     # Configuración de integraciones
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🚀 Comandos Rápidos
 
-## 🧞 Commands
+| Comando | Acción |
+| :--- | :--- |
+| `pnpm install` | Instala las dependencias del protocolo. |
+| `pnpm dev` | Inicia el servidor de desarrollo en `localhost:4321`. |
+| `pnpm build` | Compila el artefacto para producción en `./dist/`. |
+| `pnpm preview` | Previsualiza la build de producción localmente. |
 
-All commands are run from the root of the project, from a terminal:
+## 🌐 Despliegue
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Optimizado para despliegue automático en **Vercel** o **Netlify**. Cada commit en la rama `main` dispara una nueva construcción astral del sitio.
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**© 2026 GLAMOUR MAGICK** - *El conocimiento es un virus. Al leer esto, ya fuiste infectado.*
