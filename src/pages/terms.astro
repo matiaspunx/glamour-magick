@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { Sparkles, ArrowLeft } from "lucide-react"
+---
+
+<Layout title="Términos de Servicio | GLAMOUR MAGICK" description="Protocolos y términos de servicio para el taller Glamour Magick.">
+  <!-- Header Simplificado -->
+  <header class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-4xl">
+    <nav class="glass rounded-full px-6 py-3 flex items-center justify-between border-brand-plasma/20">
+      <a href="/" class="flex items-center gap-2 group">
+        <ArrowLeft size={18} className="text-brand-plasma group-hover:-translate-x-1 transition-transform" />
+        <span class="font-mono text-xs tracking-tighter uppercase font-bold text-brand-ghost">Volver</span>
+      </a>
+      <div class="flex items-center gap-2">
+        <Sparkles size={16} className="text-brand-plasma" />
+        <span class="font-mono text-[10px] uppercase tracking-widest text-slate-500">Legal Protocol</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-32 pb-24 px-6 min-h-screen relative overflow-hidden">
+    <!-- Background Glows -->
+    <div class="absolute top-1/4 -right-1/4 w-[50%] h-[50%] bg-brand-plasma/5 rounded-full blur-[120px]"></div>
+
+    <div class="container max-w-3xl mx-auto relative z-10">
+      <article class="glass p-8 md:p-16 rounded-[3rem] border-white/5 space-y-12">
+        <header class="space-y-4 border-b border-white/10 pb-8">
+          <p class="font-mono text-brand-plasma text-xs uppercase tracking-[0.4em]">Estatus: Activo / Protocolo de Iniciación</p>
+          <h1 class="text-5xl md:text-7xl font-black uppercase text-brand-ghost">Términos de <br /><span class="italic text-brand-cyan">Servicio</span></h1>
+        </header>
+
+        <div class="space-y-10 text-slate-400 font-light leading-relaxed">
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">1. Naturaleza del Taller</h2>
+            <p>
+              Glamour Magick es una formación digital intensiva sobre alquimia interna, psicología de arquetipos y magia práctica. No es un servicio de asesoría
+              financiera, médica ni psicológica.
+            </p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">2. Requisitos de Participación</h2>
+            <p>
+              Al inscribirte, declarás poseer la madurez emocional necesaria para tratar temas de manipulación psicológica y uso estratégico de la presencia. El
+              instructor se reserva el derecho de admisión para mantener la integridad del grupo.
+            </p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">3. Propiedad Intelectual</h2>
+            <p>
+              Los materiales entregados durante el taller son para uso personal del alumno. La redistribución masiva de las técnicas e información estratégica
+              sin consentimiento previo altera el propósito del experimento colectivo.
+            </p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">4. Política de Inscripción</h2>
+            <p>
+              Dada la naturaleza digital y el cupo limitado, una vez realizada la inscripción y entregado el acceso a la sesión o materiales, no se realizan
+              reembolsos excepto bajo condiciones extremas evaluadas por el nodo central.
+            </p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">5. Contacto</h2>
+            <p>
+              Cualquier duda sobre estos términos debe direccionarse a <a
+                href="mailto:matias.punx@gmail.com"
+                class="text-brand-plasma hover:text-brand-cyan underline transition-colors">matias.punx@gmail.com</a
+              > antes de proceder con el pago.
+            </p>
+          </section>
+        </div>
+
+        <footer class="pt-8 border-t border-white/10 text-center italic text-brand-plasma font-display text-xl opacity-80">
+          "El conocimiento es un virus. Al leer esto, ya fuiste infectado."
+        </footer>
+      </article>
+    </div>
+  </main>
+
+  <!-- Reutilizando el mismo Footer simplificado -->
+  <footer class="py-12 px-6 border-t border-white/5 bg-brand-void/50 backdrop-blur-sm">
+    <div class="container max-w-6xl mx-auto text-center">
+      <p class="text-xs font-mono uppercase tracking-[0.2em] text-slate-600">© 2026 GLAMOUR MAGICK. .</p>
+    </div>
+  </footer>
+</Layout>

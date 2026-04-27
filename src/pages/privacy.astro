@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { Sparkles, ArrowLeft } from "lucide-react"
+---
+
+<Layout title="Política de Privacidad | GLAMOUR MAGICK" description="Cómo manejamos tu información en el taller Glamour Magick.">
+  <!-- Header Simplificado -->
+  <header class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-4xl">
+    <nav class="glass rounded-full px-6 py-3 flex items-center justify-between border-brand-plasma/20">
+      <a href="/" class="flex items-center gap-2 group">
+        <ArrowLeft size={18} className="text-brand-plasma group-hover:-translate-x-1 transition-transform" />
+        <span class="font-mono text-xs tracking-tighter uppercase font-bold text-brand-ghost">Volver</span>
+      </a>
+      <div class="flex items-center gap-2">
+        <Sparkles size={16} className="text-brand-plasma" />
+        <span class="font-mono text-[10px] uppercase tracking-widest text-slate-500">Privacy Protocol</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-32 pb-24 px-6 min-h-screen relative overflow-hidden">
+    <!-- Background Glows -->
+    <div class="absolute bottom-1/4 -left-1/4 w-[50%] h-[50%] bg-brand-cyan/5 rounded-full blur-[120px]"></div>
+
+    <div class="container max-w-3xl mx-auto relative z-10">
+      <article class="glass p-8 md:p-16 rounded-[3rem] border-white/5 space-y-12">
+        <header class="space-y-4 border-b border-white/10 pb-8">
+          <p class="font-mono text-brand-cyan text-xs uppercase tracking-[0.4em]">Última actualización: 27 de abril de 2026</p>
+          <h1 class="text-5xl md:text-7xl font-black uppercase text-brand-ghost">Política de <br /><span class="italic text-brand-plasma">Privacidad</span></h1>
+        </header>
+
+        <div class="space-y-10 text-slate-400 font-light leading-relaxed">
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">1. Información que recopilamos</h2>
+            <p>Para la inscripción al taller y comunicación directa, recopilamos:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>Tu nombre o pseudónimo</li>
+              <li>Tu dirección de correo electrónico</li>
+              <li>Tu usuario de Instagram (opcional para contacto)</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">2. Uso de la Información</h2>
+            <p>Tus datos se utilizan única y exclusivamente para:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>Gestionar tu cupo en el taller</li>
+              <li>Enviarte los materiales digitales correspondientes</li>
+              <li>Notificarte sobre cambios en el cronograma</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">3. Almacenamiento</h2>
+            <p>
+              No utilizamos bases de datos externas de terceros para marketing. Tus datos de contacto se mantienen de forma segura y privada entre el instructor
+              y el alumno.
+            </p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">4. Derechos</h2>
+            <p>
+              Tenés derecho a solicitar la eliminación total de tus datos de nuestras listas de contacto en cualquier momento escribiendo a <a
+                href="mailto:matias.punx@gmail.com"
+                class="text-brand-plasma hover:text-brand-cyan underline transition-colors">matias.punx@gmail.com</a
+              >.
+            </p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-brand-ghost uppercase">5. Cookies</h2>
+            <p>
+              Este sitio es estático y no utiliza cookies de rastreo intrusivas ni sistemas de publicidad conductual. Respetamos la soberanía de tu atención.
+            </p>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Reutilizando el mismo Footer simplificado -->
+  <footer class="py-12 px-6 border-t border-white/5 bg-brand-void/50 backdrop-blur-sm">
+    <div class="container max-w-6xl mx-auto text-center">
+      <p class="text-xs font-mono uppercase tracking-[0.2em] text-slate-600">© 2026 GLAMOUR MAGICK.</p>
+    </div>
+  </footer>
+</Layout>
